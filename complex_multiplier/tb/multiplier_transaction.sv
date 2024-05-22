@@ -90,7 +90,7 @@ class multiplier_transaction
         $display("%s", {100{"="}});
         $display("%s", name);
         $display("%s", {100{"="}});
-        $display("input_a = %0f + 1i*%0f, input_b = %0f + 1i*%0f output_prod = %0f + 1i*%0f, ref_output_prod = %0f + 1i*%0f",
+        $display("input_a = %0f + 1i*%0f, input_b = %0f + 1i*%0f, output_prod = %0f + 1i*%0f, ref_output_prod = %0f + 1i*%0f",
                  $itor($signed(input_a[INTEGER_WIDTH+FRACTIONAL_WIDTH-1:0])) / 2**FRACTIONAL_WIDTH,
                  $itor($signed(input_a[2*(INTEGER_WIDTH+FRACTIONAL_WIDTH)-1:INTEGER_WIDTH+FRACTIONAL_WIDTH])) / 2**FRACTIONAL_WIDTH,
                  $itor($signed(input_b[INTEGER_WIDTH+FRACTIONAL_WIDTH-1:0])) / 2**FRACTIONAL_WIDTH,
